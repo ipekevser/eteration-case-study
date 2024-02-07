@@ -1,0 +1,10 @@
+.mainContainer {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    padding: 40px 10% 50px;
+    margin: 0 auto;
+    gap: 10px;
+  }
+  

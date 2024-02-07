@@ -1,0 +1,7 @@
+.detailContainer {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    display: flex;
+    padding: 40px 10% 50px;
+    gap: 10px;
+}

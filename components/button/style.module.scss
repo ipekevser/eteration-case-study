@@ -1,0 +1,10 @@
+.customButton {
+  background-color: var(--primary);
+  color: var(--white);
+  text-transform: none;
+  font-weight: 400;
+
+  &:hover {
+    background-color: var(--ligth-primary);
+  }
+}

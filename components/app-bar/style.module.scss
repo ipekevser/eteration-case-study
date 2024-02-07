@@ -1,0 +1,35 @@
+.toolbar {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: var(--primary);
+  gap: 10px;
+
+  .logoField,
+  .profileField {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    min-width: 220px;
+    gap: 15px;
+
+    h2{
+      cursor: pointer;
+    }
+
+    .portfeil,
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .searchBar {
+    width: 70%;
+    display: flex;
+    align-items: center;
+
+  }
+}

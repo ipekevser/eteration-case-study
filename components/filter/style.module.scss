@@ -1,0 +1,38 @@
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  min-width: max-content;
+  position: sticky;
+  top: 0;
+
+  .searchBar {
+    background-color: var(--body-color);
+    min-height: 40px;
+    margin-bottom: 10px;
+
+    input {
+      width: 95%;
+    }
+  }
+
+  .paperContent {
+    overflow-y: auto;
+  }
+
+  .spinner{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .checkbox, .radioButtons {
+    color: var(--primary);
+    &.Mui-checked {
+      color: var(--primary) ;
+    }
+  }
+}

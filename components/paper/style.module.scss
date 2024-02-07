@@ -1,0 +1,22 @@
+.paperContainer {
+  margin-bottom: 15px;
+
+  .label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: var(--label);
+    margin-bottom: 5px;
+  }
+
+  .paper {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 200px;
+    overflow: hidden;
+    padding: 15px;
+    max-height: 200px;
+
+  }
+}

@@ -1,0 +1,111 @@
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  min-width: max-content;
+  position: sticky;
+  top: 0;
+
+  .cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+
+    .productDetails {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      .productName {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+      .productPrice {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 12px;
+        color: var(--primary);
+      }
+    }
+
+    .productCounter {
+      width: 78px;
+      height: 27px;
+      min-width: 0;
+      width: 40%;
+
+      .descCount,
+      .ascCount {
+        background-color: var(--body-color);
+        min-width: 25px;
+        padding: 0;
+        color: var(--black);
+        border: none;
+      }
+
+      .amount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 28px;
+        width: 28px;
+        background-color: var(--primary);
+        color: var(--white);
+        border: none;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .emptyCart {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--primary);
+  }
+
+  .checkout {
+    display: flex;
+    gap: 10px;
+    height: 82px;
+
+    .totalPrice {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 15px;
+
+      span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: var(--primary);
+      }
+    }
+
+    .checkoutButton {
+      height: 30px;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+
+  .paperWrapper {
+    overflow-y: auto;
+    height: 143px;
+  }
+}
