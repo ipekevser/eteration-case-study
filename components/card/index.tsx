@@ -33,8 +33,8 @@ export default function ProductCard({ item }: IProductCard) {
   };
 
   const navigateDetail = () => {
-    router.push(ROUTES.DETAIL + `/${item.id}`)
-  }
+    router.push(ROUTES.DETAIL + `/${item.id}`);
+  };
 
   return (
     <Box className={styles.cardContainer} onClick={navigateDetail}>

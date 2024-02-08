@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import { FilterState } from './interface';
 
 const filterSlice = createSlice({
@@ -9,10 +9,9 @@ const filterSlice = createSlice({
       selectedModels: [],
       selectedSortParam: '',
       searchParam: '',
-    } ,
+    },
   } as FilterState,
   reducers: {
-    
     updateFilterParams(state, action) {
       state.filterParams = action.payload;
     },

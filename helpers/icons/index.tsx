@@ -52,7 +52,7 @@ const useIcons = () => {
   return {
     SearchBarIcon,
     ProfileIcon,
-    PortfeilIcon
+    PortfeilIcon,
   };
 };
 

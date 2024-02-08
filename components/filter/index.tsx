@@ -1,19 +1,22 @@
 import styles from './style.module.scss';
 import { useAppDispatch, useAppSelector } from '@/store/interface';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { filterActions } from '@/store/filter-slice';
 import PaperWrapper from '../paper';
-import { Checkbox, CircularProgress, FormControlLabel, FormGroup, Radio, RadioGroup } from '@mui/material';
 import { sortValues } from '@/constants/filter';
 import SearchInput from '../search';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import CircularProgress from '@mui/material/CircularProgress';
+import FormGroup from '@mui/material/FormGroup';
+import Checkbox from '@mui/material/Checkbox';
+import Radio from '@mui/material/Radio';
 
 export default function FilterContainer() {
   const dispatch = useAppDispatch();
 
   const brands = useAppSelector((state) => state.list.brands);
   const models = useAppSelector((state) => state.list.models);
-  const isLoading = useAppSelector((state) => state.list.isLoading);
-  const error = useAppSelector((state) => state.list.error);
   const filterParams = useAppSelector((state) => state.filter.filterParams);
 
   const [brandSearchTerm, setBrandSearchTerm] = useState('');

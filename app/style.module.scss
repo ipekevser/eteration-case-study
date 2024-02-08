@@ -1,10 +1,22 @@
+@import '../styles/responsive';
+
 .mainContainer {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-    display: flex;
-    justify-content: center;
-    padding: 40px 10% 50px;
-    margin: 0 auto;
-    gap: 10px;
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  padding: 40px 10% 50px;
+  margin: 0 auto;
+  gap: 10px;
+
+  @include custom-breakpoint(lg) {
+    flex-direction: column;
+    padding: 20px;
+    justify-content: unset;
+    margin: none;
   }
-  
+
+  @include custom-breakpoint(sm) {
+    flex-direction: column-reverse;
+  }
+}

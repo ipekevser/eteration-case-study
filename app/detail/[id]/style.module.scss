@@ -1,7 +1,17 @@
+@import '../../../styles/responsive';
+
 .detailContainer {
     height: calc(100vh - 50px);
     overflow-y: auto;
     display: flex;
     padding: 40px 10% 50px;
     gap: 10px;
+
+    @include custom-breakpoint(xl) {
+        padding: 40px 3% 50px;
+    }
+
+    @include custom-breakpoint(lg) {
+        flex-direction: column;
+    }
 }

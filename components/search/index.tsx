@@ -12,7 +12,7 @@ export default function SearchInput({ externalClass, onChange }: ISearch) {
   return (
     <div className={classNames(styles.searchField, externalClass)}>
       <SearchBarIcon />
-      <InputBase placeholder='Search' inputProps={{ 'aria-label': 'search' }} onChange={onChange} fullWidth/>
+      <InputBase placeholder='Search' inputProps={{ 'aria-label': 'search' }} onChange={onChange} fullWidth />
     </div>
   );
 }

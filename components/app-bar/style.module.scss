@@ -1,3 +1,5 @@
+@import '../../styles/responsive';
+
 .toolbar {
   padding: 0 10%;
   display: flex;
@@ -16,6 +18,10 @@
 
     h2{
       cursor: pointer;
+
+      @include custom-breakpoint(lg) {
+        font-size: 14px;
+      }
     }
 
     .portfeil,
@@ -24,6 +30,20 @@
       align-items: center;
       gap: 10px;
     }
+
+    @include custom-breakpoint(lg) {
+      min-width: 30px;
+      width: 15%;
+      gap: 5px;
+    }
+  }
+
+  .profileField {
+    @include custom-breakpoint(lg) {
+      min-width: 30px;
+      width: 35%;
+      gap: 5px;
+    }
   }
 
   .searchBar {
@@ -31,5 +51,12 @@
     display: flex;
     align-items: center;
 
+    @include custom-breakpoint(lg) {
+      width: 50%;
+    }
+  }
+
+  @include custom-breakpoint(lg) {
+    padding: 0 3%;
   }
 }

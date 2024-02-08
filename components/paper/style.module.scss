@@ -1,3 +1,5 @@
+@import '../../styles/responsive';
+
 .paperContainer {
   margin-bottom: 15px;
 
@@ -18,5 +20,21 @@
     padding: 15px;
     max-height: 200px;
 
+    @include custom-breakpoint(lg) {
+      padding: 5px;
+    }
+
+    @include custom-breakpoint(md) {
+      padding: 5px;
+      width: 150px;
+    }
+
+    @include custom-breakpoint(sm) {
+      width: 100%;
+    }
+  }
+
+  @include custom-breakpoint(sm) {
+    width: 70%;
   }
 }

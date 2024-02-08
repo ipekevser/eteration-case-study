@@ -23,8 +23,8 @@ export const filterFunc = (response: Product[], searchParam: string, selectedBra
 };
 
 export const filterByIDFunc = (id: string, response: Product[]): Product | null => {
-    return response.find((item: Product) => item.id === id) || null;
-  };
+  return response.find((item: Product) => item.id === id) || null;
+};
 
 interface ItemSortKey {
   createdAt: string;

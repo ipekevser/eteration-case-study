@@ -1,3 +1,5 @@
+@import '../../styles/responsive';
+
 .filterContainer {
   display: flex;
   flex-direction: column;
@@ -6,6 +8,19 @@
   min-width: max-content;
   position: sticky;
   top: 0;
+
+  @include custom-breakpoint(lg) {
+    flex-direction: row;
+    position: none;
+    flex-wrap: wrap;
+    width: 100%;
+    top: unset;
+    justify-content: space-between;
+  }
+
+  @include custom-breakpoint(sm) {
+    display: none;
+  }
 
   .searchBar {
     background-color: var(--body-color);
@@ -21,7 +36,7 @@
     overflow-y: auto;
   }
 
-  .spinner{
+  .spinner {
     display: flex;
     height: 100%;
     width: 100%;
@@ -29,10 +44,11 @@
     justify-content: center;
   }
 
-  .checkbox, .radioButtons {
+  .checkbox,
+  .radioButtons {
     color: var(--primary);
     &.Mui-checked {
-      color: var(--primary) ;
+      color: var(--primary);
     }
   }
 }

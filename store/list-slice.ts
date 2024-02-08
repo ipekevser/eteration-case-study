@@ -1,11 +1,7 @@
-import { createSlice, createAsyncThunk, PayloadAction, AsyncThunk } from '@reduxjs/toolkit';
-import { AsyncThunkConfig } from '@reduxjs/toolkit/dist/createAsyncThunk';
+import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { FetchContentArgs, FetchDetailContentArgs, ListState, Product } from './interface';
-import { filterReducer } from '@/store/filter-slice';
-import { useAppSelector } from '@/store/interface';
 import { filterByIDFunc, filterFunc, sortItems } from '@/helpers/utils';
-import { number } from 'react-admin';
 
 export const fetchContent = createAsyncThunk('content/fetchContent', async (page: FetchContentArgs) => {
   const res = await axios.get<Product[]>('https://5fc9346b2af77700165ae514.mockapi.io/products');

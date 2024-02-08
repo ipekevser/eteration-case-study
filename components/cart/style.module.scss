@@ -1,3 +1,5 @@
+@import '../../styles/responsive';
+
 .cartContainer {
   display: flex;
   flex-direction: column;
@@ -6,6 +8,21 @@
   min-width: max-content;
   position: sticky;
   top: 0;
+
+  @include custom-breakpoint(lg) {
+    flex-direction: row;
+    position: none;
+    flex-wrap: wrap;
+    width: 100%;
+    top: unset;
+    justify-content: center;
+    gap: 30px;
+    
+  }
+
+  @include custom-breakpoint(sm) {
+    flex-direction: column;
+  }
 
   .cart {
     display: flex;

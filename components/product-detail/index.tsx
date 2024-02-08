@@ -27,8 +27,6 @@ export default function ProductDetail({ item }: { item: Product | null }) {
     dispatch(cartActions.updateCartData(newItem));
   };
 
-  console.log(item);
-
   return (
     <Box className={styles.detailField}>
       <PaperWrapper externalClass={styles.detailWrapper}>

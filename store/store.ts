@@ -8,6 +8,6 @@ import { cartReducer } from './cart-slice';
 
 export const makeStore = () => {
   return configureStore({
-    reducer: { list: listReducer, filter: filterReducer, cart: cartReducer},
+    reducer: { list: listReducer, filter: filterReducer, cart: cartReducer },
   });
 };
